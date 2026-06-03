@@ -1,0 +1,81 @@
+<!--Tela 04-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <!--link boostrap-->
+        <link rel="stylesheet" href="main.css"> <!--link css-->
+        <title>Arbir Chamado</title>
+</head>
+<body class="d-flex align-items-center py-4">
+<main class="form-container w-100 m-auto">
+<form method="post" class="container" action="action_page.php"> <!--Formulario-->
+        <h3>Abrir Chamado</h3> <!--titulo da tela-->
+        <p>Preencha os dados para registrar um novo chamado</p>
+
+        <!--entrada de dados do formulario de chamado-->
+        <div class="mb-2">
+            <label for="title-label" class="form-label">Titulo</label>
+            <input type="text" class="form-control" id="title-label" placeholder="Resumo do problema">
+        </div>
+        <div class="mb-2">
+            <label for="descrição-label" class="form-label">Descrição</label>
+            <textarea class="form-control" id="textarea" rows="3"
+                placeholder="Descreva o chamado em detalhes..."></textarea> <!--espaço para escrever texto detalhado-->
+        </div>
+        <!--menu de opções-->
+        <div class="row">
+            <div class="col-md-6 mb-2">
+                <label for="select-label" class="form-label">Departamento</label>
+                <select class="form-select" id="select-form" required> <!--Elemento de seleção-->
+                    <option>TI</option> <!--Elemento para opções-->
+                    <option>RH</option>
+                    <option>Financeiro</option>
+                </select>
+            </div>
+            <div class="col-md-6 mb-2">
+                <label for="select-label" class="form-label">Região</label>
+                <select class="form-select" id="regiao" required> <!--Elemento de seleção-->
+                    <option>Sudeste</option> <!--Elemento para opções-->
+                    <option>Sul</option>
+                    <option>Norte</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3">
+                <label for="title-label" class="form-label">Responsável</label>
+                <input type="text" class="form-control" placeholder="Nome do responsavel pelo atendimento">
+                <!--inserindo texto-->
+            </div>
+        </div>
+
+        <div class="row"">
+    <div class="mb-2">
+            <lab for="select-label" class="form-label">Status</lab>
+            <select class="form-select" id="status" required> <!--Elemento de seleção-->
+                <option>Em aberto</option> <!--Elemento para opções-->
+                <option>Em análise</option>
+                <option>Resolvido</option>
+            </select>
+            <p>Ao criar um novo chamado, o status inicial será "Em aberto".</p>
+        </div>
+    </div>
+        <div class="row">
+            <div class="mb-2">
+                <label for="calendario">Data e Hora</label><!--Elemento para opções de data e hora-->
+                <input type="datetime-local" id="calendario" name="calendario" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-flex justify-content-center gap-2"> <!--codigo para centralizar lado a lado o botão-->
+                <button type="button" class="btn btn-dark btn-lg col-6">Enviar</button><!--Botão para envio dos dados-->
+                <button type="button" class="btn btn-light btn-lg col-6">Cancelar</button><!--Botão de cancelamento dos dados-->
+            </div>
+        </div>
+    </form>
+</main>
+</body>
+</html>
