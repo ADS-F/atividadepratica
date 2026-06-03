@@ -1,0 +1,13 @@
+.form-container{
+    max-width: 350px;
+    padding: 1rem;
+    border-style:outset;
+}
+
+html, body{
+    height: 100%;
+}
+
+.m-auto{
+   margin: auto !important;
+}
