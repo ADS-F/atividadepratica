@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função com parametros</title>
+</head>
+<body>
+    <h1>Função com parametros</h1>
+    <p id="teste1">A soma dos numeros é: </p>
+    <p id="teste2">A subtração dos numeros é: </p>
+    <p id="teste3">A multiplicação dos numeros é: </p>
+    <p id="teste4">A divisão dos numeros é: </p>
+
+
+    <button type="button" onclick="document.getElementById('teste1').innerHTML += Soma(num1, num2);">Soma</button>
+    <button type="button" onclick="document.getElementById('teste2').innerHTML += Subtracao(num1, num2);">Subtração</button>
+    <button type="button" onclick="document.getElementById('teste3').innerHTML += Multiplicacao(num1, num2);">Multiplicação</button>
+    <button type="button" onclick="document.getElementById('teste4').innerHTML += Divisao(num1, num2);">Divisão</button>
+
+    <script src="03-funcao-com-parametros.js"></script>
+</body>
+</html>
