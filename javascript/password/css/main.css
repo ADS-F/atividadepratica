@@ -1,0 +1,52 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+/*em volta do conteudo*/
+.container{ 
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/*rotulo*/
+
+label{
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/*entrada de dados*/
+.input-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+    /*caixa de entrada dos dados*/
+    input{
+        width: 100%;
+        padding:10px;
+        margin: 10px 0;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    /*icone de ocultar e mostrar senha*/
+    .eye-icon{
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        color: #333;
+    }
